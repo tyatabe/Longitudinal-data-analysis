@@ -1,0 +1,3657 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+<TITLE>SAS Output</TITLE>
+<META name=GENERATOR content="MSHTML 11.00.9600.18283">
+<META content="text/html; charset=windows-1252" http-equiv=Content-type>
+<STYLE type=text/css>.aftercaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; PADDING-TOP: 4pt; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.batch {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: 'SAS Monospace', 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 7px; FONT-STYLE: normal; PADDING-TOP: 7px; PADDING-LEFT: 7px; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: #fafbfe
+}
+.beforecaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.body {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.bodydate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bycontentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.byline {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bylinecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.caption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.cell {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.container {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contentprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contents {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.contentsdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contenttitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.continued {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.data {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: italic; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataempty {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datafixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrong {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.date {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.document {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #800080
+}
+A:active {
+	COLOR: #800080
+}
+.errorbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.errorcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.errorcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.extendedpage {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 1pt solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 1pt solid; BORDER-BOTTOM: #000000 1pt solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; TEXT-ALIGN: center; BORDER-LEFT: #000000 1pt solid; BACKGROUND-COLOR: #fafbfe
+}
+.fatalbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.folderaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.footer {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.frame {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.graph {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.header {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headersandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #edf2f9
+}
+.headerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.index {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.indexaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.indextitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.layoutcontainer {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: #000000 0px solid
+}
+.layoutregion {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: #000000 0px solid
+}
+.linecontent {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.list {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.note {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notebanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notecontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notecontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.output {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.pageno {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.pages {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.pagesdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagesitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.pagesproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagesprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagestitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.paragraph {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.parskip {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: bold; FONT-STYLE: normal; BORDER-SPACING: 0px; BORDER-LEFT: #000000 0px solid
+}
+.prepage {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.proctitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.proctitlefixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier, monospace; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.rowfooter {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheader {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.systemfooter {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter10 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter2 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter3 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter4 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter5 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter6 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter7 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter8 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter9 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle10 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle2 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle3 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle4 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle5 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle6 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle7 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle8 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle9 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systitleandfootercontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.table {
+	BORDER-TOP: #c1c1c1 1px solid; BORDER-RIGHT: #c1c1c1 0px solid; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #c1c1c1 0px solid; BORDER-SPACING: 0px; BORDER-LEFT: #c1c1c1 1px solid
+}
+.top_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 1px; BORDER-LEFT: 0px
+}
+.middle_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.bottom_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.titleandnotecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.titlesandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.usertext {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warnbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warncontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warncontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.l {
+	TEXT-ALIGN: left
+}
+.c {
+	TEXT-ALIGN: center
+}
+.r {
+	TEXT-ALIGN: right
+}
+.d {
+	TEXT-ALIGN: right
+}
+.j {
+	TEXT-ALIGN: justify
+}
+.t {
+	VERTICAL-ALIGN: top
+}
+.m {
+	VERTICAL-ALIGN: middle
+}
+.b {
+	VERTICAL-ALIGN: bottom
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+.stacked_cell {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+</STYLE>
+
+<SCRIPT language=javascript type=text/javascript>
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY class=body onload=startup() onunload=shutdown()>
+<SCRIPT language=javascript type=text/javascript>
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</SCRIPT>
+
+<DIV class=branch><A name=IDX></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Print: Data Set WORK.EXERCISE" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="r header" scope=col>Obs</TH>
+    <TH class="r header" scope=col>id</TH>
+    <TH class="r header" scope=col>group</TH>
+    <TH class="r header" scope=col>time</TH>
+    <TH class="r header" scope=col>strength</TH>
+    <TH class="r header" scope=col>day</TH>
+    <TH class="r header" scope=col>day_f</TH>
+    <TH class="r header" scope=col>group_f</TH>
+    <TH class="r header" scope=col>newtime</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>6</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>7</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>8</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>9</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>10</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">87</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>11</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>12</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>13</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>14</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>15</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>16</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>17</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>18</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>19</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>20</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>21</TH>
+    <TD class="r data">5</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>22</TH>
+    <TD class="r data">5</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>23</TH>
+    <TD class="r data">5</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>24</TH>
+    <TD class="r data">5</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>25</TH>
+    <TD class="r data">5</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>26</TH>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">76</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>27</TH>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">76</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>28</TH>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">76</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>29</TH>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">76</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>30</TH>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">75</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>31</TH>
+    <TD class="r data">7</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>32</TH>
+    <TD class="r data">7</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>33</TH>
+    <TD class="r data">7</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>34</TH>
+    <TD class="r data">7</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>35</TH>
+    <TD class="r data">7</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>36</TH>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">77</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>37</TH>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>38</TH>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>39</TH>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>40</TH>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>41</TH>
+    <TD class="r data">9</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>42</TH>
+    <TD class="r data">9</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">87</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>43</TH>
+    <TD class="r data">9</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">89</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>44</TH>
+    <TD class="r data">9</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>45</TH>
+    <TD class="r data">9</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>46</TH>
+    <TD class="r data">10</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">74</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>47</TH>
+    <TD class="r data">10</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">78</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>48</TH>
+    <TD class="r data">10</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">78</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>49</TH>
+    <TD class="r data">10</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>50</TH>
+    <TD class="r data">10</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">78</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>51</TH>
+    <TD class="r data">11</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">76</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>52</TH>
+    <TD class="r data">11</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">77</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>53</TH>
+    <TD class="r data">11</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">77</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>54</TH>
+    <TD class="r data">11</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">77</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>55</TH>
+    <TD class="r data">11</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">76</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>56</TH>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>57</TH>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>58</TH>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>59</TH>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>60</TH>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>61</TH>
+    <TD class="r data">13</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>62</TH>
+    <TD class="r data">13</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>63</TH>
+    <TD class="r data">13</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>64</TH>
+    <TD class="r data">13</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>65</TH>
+    <TD class="r data">13</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>66</TH>
+    <TD class="r data">14</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">78</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>67</TH>
+    <TD class="r data">14</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">77</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>68</TH>
+    <TD class="r data">14</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>69</TH>
+    <TD class="r data">14</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">75</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>70</TH>
+    <TD class="r data">14</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">76</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>71</TH>
+    <TD class="r data">15</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">78</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>72</TH>
+    <TD class="r data">15</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">77</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>73</TH>
+    <TD class="r data">15</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">77</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>74</TH>
+    <TD class="r data">15</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">75</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>75</TH>
+    <TD class="r data">15</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">75</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>76</TH>
+    <TD class="r data">16</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>77</TH>
+    <TD class="r data">16</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>78</TH>
+    <TD class="r data">16</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>79</TH>
+    <TD class="r data">16</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>80</TH>
+    <TD class="r data">16</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">1</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>81</TH>
+    <TD class="r data">17</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>82</TH>
+    <TD class="r data">17</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>83</TH>
+    <TD class="r data">17</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>84</TH>
+    <TD class="r data">17</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>85</TH>
+    <TD class="r data">17</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>86</TH>
+    <TD class="r data">18</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">74</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>87</TH>
+    <TD class="r data">18</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">75</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>88</TH>
+    <TD class="r data">18</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">78</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>89</TH>
+    <TD class="r data">18</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">75</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>90</TH>
+    <TD class="r data">18</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">76</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>91</TH>
+    <TD class="r data">19</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>92</TH>
+    <TD class="r data">19</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>93</TH>
+    <TD class="r data">19</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>94</TH>
+    <TD class="r data">19</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>95</TH>
+    <TD class="r data">19</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>96</TH>
+    <TD class="r data">20</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>97</TH>
+    <TD class="r data">20</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">87</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>98</TH>
+    <TD class="r data">20</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">87</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>99</TH>
+    <TD class="r data">20</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">87</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>100</TH>
+    <TD class="r data">20</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>101</TH>
+    <TD class="r data">21</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>102</TH>
+    <TD class="r data">21</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>103</TH>
+    <TD class="r data">21</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>104</TH>
+    <TD class="r data">21</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>105</TH>
+    <TD class="r data">21</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>106</TH>
+    <TD class="r data">22</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>107</TH>
+    <TD class="r data">22</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>108</TH>
+    <TD class="r data">22</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>109</TH>
+    <TD class="r data">22</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>110</TH>
+    <TD class="r data">22</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>111</TH>
+    <TD class="r data">23</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>112</TH>
+    <TD class="r data">23</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>113</TH>
+    <TD class="r data">23</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>114</TH>
+    <TD class="r data">23</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>115</TH>
+    <TD class="r data">23</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>116</TH>
+    <TD class="r data">24</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">87</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>117</TH>
+    <TD class="r data">24</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">91</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>118</TH>
+    <TD class="r data">24</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">90</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>119</TH>
+    <TD class="r data">24</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">91</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>120</TH>
+    <TD class="r data">24</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>121</TH>
+    <TD class="r data">25</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>122</TH>
+    <TD class="r data">25</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>123</TH>
+    <TD class="r data">25</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>124</TH>
+    <TD class="r data">25</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>125</TH>
+    <TD class="r data">25</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>126</TH>
+    <TD class="r data">26</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>127</TH>
+    <TD class="r data">26</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>128</TH>
+    <TD class="r data">26</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>129</TH>
+    <TD class="r data">26</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>130</TH>
+    <TD class="r data">26</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>131</TH>
+    <TD class="r data">27</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>132</TH>
+    <TD class="r data">27</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>133</TH>
+    <TD class="r data">27</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>134</TH>
+    <TD class="r data">27</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>135</TH>
+    <TD class="r data">27</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>136</TH>
+    <TD class="r data">28</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>137</TH>
+    <TD class="r data">28</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>138</TH>
+    <TD class="r data">28</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>139</TH>
+    <TD class="r data">28</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>140</TH>
+    <TD class="r data">28</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>141</TH>
+    <TD class="r data">29</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>142</TH>
+    <TD class="r data">29</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>143</TH>
+    <TD class="r data">29</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>144</TH>
+    <TD class="r data">29</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>145</TH>
+    <TD class="r data">29</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>146</TH>
+    <TD class="r data">30</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>147</TH>
+    <TD class="r data">30</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>148</TH>
+    <TD class="r data">30</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>149</TH>
+    <TD class="r data">30</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>150</TH>
+    <TD class="r data">30</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>151</TH>
+    <TD class="r data">31</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">78</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>152</TH>
+    <TD class="r data">31</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>153</TH>
+    <TD class="r data">31</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>154</TH>
+    <TD class="r data">31</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">78</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>155</TH>
+    <TD class="r data">31</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>156</TH>
+    <TD class="r data">32</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>157</TH>
+    <TD class="r data">32</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>158</TH>
+    <TD class="r data">32</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>159</TH>
+    <TD class="r data">32</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>160</TH>
+    <TD class="r data">32</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">84</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>161</TH>
+    <TD class="r data">33</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>162</TH>
+    <TD class="r data">33</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">79</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>163</TH>
+    <TD class="r data">33</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>164</TH>
+    <TD class="r data">33</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>165</TH>
+    <TD class="r data">33</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>166</TH>
+    <TD class="r data">34</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>167</TH>
+    <TD class="r data">34</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>168</TH>
+    <TD class="r data">34</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>169</TH>
+    <TD class="r data">34</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>170</TH>
+    <TD class="r data">34</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>171</TH>
+    <TD class="r data">35</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">85</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>172</TH>
+    <TD class="r data">35</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">87</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>173</TH>
+    <TD class="r data">35</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>174</TH>
+    <TD class="r data">35</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>175</TH>
+    <TD class="r data">35</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">86</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>176</TH>
+    <TD class="r data">36</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">77</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>177</TH>
+    <TD class="r data">36</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>178</TH>
+    <TD class="r data">36</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>179</TH>
+    <TD class="r data">36</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>180</TH>
+    <TD class="r data">36</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">82</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>181</TH>
+    <TD class="r data">37</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>182</TH>
+    <TD class="r data">37</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">80</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>183</TH>
+    <TD class="r data">37</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>184</TH>
+    <TD class="r data">37</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">81</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">8</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">4</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>185</TH>
+    <TD class="r data">37</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">6</TD>
+    <TD class="r data">83</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">12</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">5</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX1></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The Mixed Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Model Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Model 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set</TH>
+    <TD class="l data">WORK.EXERCISE</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Variable</TH>
+    <TD class="l data">strength</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Covariance Structure</TH>
+    <TD class="l data">Spatial Exponential</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Subject Effect</TH>
+    <TD class="l data">id</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Estimation Method</TH>
+    <TD class="l data">REML</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Residual Variance Method</TH>
+    <TD class="l data">Profile</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Fixed Effects SE Method</TH>
+    <TD class="l data">Model-Based</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Degrees of Freedom Method</TH>
+    <TD class="l data">Between-Within</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX2></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Class Level Information" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Class Level 
+  Information</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Class</TH>
+    <TH class="r b header" scope=col>Levels</TH>
+    <TH class="l b header" scope=col>Values</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>id</TH>
+    <TD class="r data">37</TD>
+    <TD class="l data">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 
+      22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group</TH>
+    <TD class="r data">2</TD>
+    <TD class="l data">1 2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TD class="r data">5</TD>
+    <TD class="l data">0 2 3 4 6</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX3></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Dimensions" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Dimensions</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Covariance Parameters</TH>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Columns in X</TH>
+    <TD class="r data">18</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Columns in Z</TH>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Subjects</TH>
+    <TD class="r data">37</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Max Obs per Subject</TH>
+    <TD class="r data">5</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX4></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Number of 
+  Observations</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">185</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">173</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Not Used</TH>
+    <TD class="r data">12</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX5></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Iteration History" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Iteration History</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Iteration</TH>
+    <TH class="r b header" scope=col>Evaluations</TH>
+    <TH class="r b header" scope=col>-2&nbsp;Res&nbsp;Log&nbsp;Like</TH>
+    <TH class="r b header" scope=col>Criterion</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">893.47252907</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">686.42342277</TD>
+    <TD class="r data">0.14063362</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">650.83185508</TD>
+    <TD class="r data">0.08302013</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">631.90109146</TD>
+    <TD class="r data">0.04245168</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">622.88673739</TD>
+    <TD class="r data">0.01713080</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">619.45497302</TD>
+    <TD class="r data">0.00443599</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>6</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">618.62527630</TD>
+    <TD class="r data">0.00045783</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>7</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">618.54692686</TD>
+    <TD class="r data">0.00000658</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>8</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">618.54586739</TD>
+    <TD class="r data">0.00000000</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX6></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criteria 
+met.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX7></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Estimated R Matrix for id 1" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Estimated R Matrix for id 
+    1</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Row</TH>
+    <TH class="r b header" scope=col>Col1</TH>
+    <TH class="r b header" scope=col>Col2</TH>
+    <TH class="r b header" scope=col>Col3</TH>
+    <TH class="r b header" scope=col>Col4</TH>
+    <TH class="r b header" scope=col>Col5</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="r data">11.8738</TD>
+    <TD class="r data">10.8875</TD>
+    <TD class="r data">10.4255</TD>
+    <TD class="r data">9.9832</TD>
+    <TD class="r data">9.1539</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="r data">10.8875</TD>
+    <TD class="r data">11.8738</TD>
+    <TD class="r data">11.3700</TD>
+    <TD class="r data">10.8875</TD>
+    <TD class="r data">9.9832</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="r data">10.4255</TD>
+    <TD class="r data">11.3700</TD>
+    <TD class="r data">11.8738</TD>
+    <TD class="r data">11.3700</TD>
+    <TD class="r data">10.4255</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="r data">9.9832</TD>
+    <TD class="r data">10.8875</TD>
+    <TD class="r data">11.3700</TD>
+    <TD class="r data">11.8738</TD>
+    <TD class="r data">10.8875</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="r data">9.1539</TD>
+    <TD class="r data">9.9832</TD>
+    <TD class="r data">10.4255</TD>
+    <TD class="r data">10.8875</TD>
+    <TD class="r data">11.8738</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX8></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Estimated R Correlation Matrix for id 1" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Estimated R Correlation 
+      Matrix for id 1</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Row</TH>
+    <TH class="r b header" scope=col>Col1</TH>
+    <TH class="r b header" scope=col>Col2</TH>
+    <TH class="r b header" scope=col>Col3</TH>
+    <TH class="r b header" scope=col>Col4</TH>
+    <TH class="r b header" scope=col>Col5</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="r data">1.0000</TD>
+    <TD class="r data">0.9169</TD>
+    <TD class="r data">0.8780</TD>
+    <TD class="r data">0.8408</TD>
+    <TD class="r data">0.7709</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="r data">0.9169</TD>
+    <TD class="r data">1.0000</TD>
+    <TD class="r data">0.9576</TD>
+    <TD class="r data">0.9169</TD>
+    <TD class="r data">0.8408</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="r data">0.8780</TD>
+    <TD class="r data">0.9576</TD>
+    <TD class="r data">1.0000</TD>
+    <TD class="r data">0.9576</TD>
+    <TD class="r data">0.8780</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="r data">0.8408</TD>
+    <TD class="r data">0.9169</TD>
+    <TD class="r data">0.9576</TD>
+    <TD class="r data">1.0000</TD>
+    <TD class="r data">0.9169</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="r data">0.7709</TD>
+    <TD class="r data">0.8408</TD>
+    <TD class="r data">0.8780</TD>
+    <TD class="r data">0.9169</TD>
+    <TD class="r data">1.0000</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX9></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Covariance Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Covariance Parameter 
+      Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Cov Parm</TH>
+    <TH class="l b header" scope=col>Subject</TH>
+    <TH class="r b header" scope=col>Estimate</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>SP(EXP)</TH>
+    <TH class="l data">id</TH>
+    <TD class="r data">46.1262</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Residual</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">11.8738</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX10></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Fit 
+  Statistics</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 Res Log Likelihood</TH>
+    <TD class="r data">618.5</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC (Smaller is Better)</TH>
+    <TD class="r data">622.5</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AICC (Smaller is Better)</TH>
+    <TD class="r data">622.6</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>BIC (Smaller is Better)</TH>
+    <TD class="r data">625.8</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX11></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Null Model Likelihood Ratio Test" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Null Model Likelihood 
+      Ratio Test</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">1</TD>
+    <TD class="r data">274.93</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX12></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Solution for Fixed Effects" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=8 scope=colgroup>Solution for Fixed 
+    Effects</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="l b header" scope=col>group</TH>
+    <TH class="l b header" scope=col>time</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr &gt; |t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">83.0052</TD>
+    <TD class="r data">0.7769</TD>
+    <TD class="r data">35</TD>
+    <TD class="r data">106.84</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data" noWrap>-1.7099</TD>
+    <TD class="r data">1.1634</TD>
+    <TD class="r data">35</TD>
+    <TD class="r data" noWrap>-1.47</TD>
+    <TD class="r data">0.1506</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data" noWrap>-1.9576</TD>
+    <TD class="r data">0.5452</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data" noWrap>-3.59</TD>
+    <TD class="r data">0.0005</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data" noWrap>-1.0435</TD>
+    <TD class="r data">0.4689</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data" noWrap>-2.23</TD>
+    <TD class="r data">0.0278</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data" noWrap>-0.3862</TD>
+    <TD class="r data">0.4196</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data" noWrap>-0.92</TD>
+    <TD class="r data">0.3591</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data" noWrap>-0.4593</TD>
+    <TD class="r data">0.3648</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data" noWrap>-1.26</TD>
+    <TD class="r data">0.2102</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">6</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data">0.3498</TD>
+    <TD class="r data">0.8032</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">0.44</TD>
+    <TD class="r data">0.6639</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">0.5606</TD>
+    <TD class="r data">0.6812</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">0.82</TD>
+    <TD class="r data">0.4121</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">0.08879</TD>
+    <TD class="r data">0.6059</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">0.15</TD>
+    <TD class="r data">0.8837</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">0.4234</TD>
+    <TD class="r data">0.5172</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">0.82</TD>
+    <TD class="r data">0.4145</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">6</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">6</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX13></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Type 3 Tests of Fixed Effects" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=7 scope=colgroup>Type 3 Tests of Fixed 
+      Effects</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="r b header" scope=col>Num DF</TH>
+    <TH class="r b header" scope=col>Den DF</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>group</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">35</TD>
+    <TD class="r data">1.70</TD>
+    <TD class="r data">1.70</TD>
+    <TD class="r data">0.1917</TD>
+    <TD class="r data">0.2002</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">28.18</TD>
+    <TD class="r data">7.04</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">3.57</TD>
+    <TD class="r data">0.89</TD>
+    <TD class="r data">0.4679</TD>
+    <TD class="r data">0.4711</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX14></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The Mixed Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Model Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Model 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set</TH>
+    <TD class="l data">WORK.EXERCISE</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Variable</TH>
+    <TD class="l data">strength</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Covariance Structure</TH>
+    <TD class="l data">Spatial Exponential</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Subject Effect</TH>
+    <TD class="l data">id</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Estimation Method</TH>
+    <TD class="l data">REML</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Residual Variance Method</TH>
+    <TD class="l data">Profile</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Fixed Effects SE Method</TH>
+    <TD class="l data">Empirical</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Degrees of Freedom Method</TH>
+    <TD class="l data">Between-Within</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX15></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Class Level Information" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Class Level 
+  Information</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Class</TH>
+    <TH class="r b header" scope=col>Levels</TH>
+    <TH class="l b header" scope=col>Values</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>id</TH>
+    <TD class="r data">37</TD>
+    <TD class="l data">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 
+      22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group</TH>
+    <TD class="r data">2</TD>
+    <TD class="l data">1 2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TD class="r data">5</TD>
+    <TD class="l data">0 2 3 4 6</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX16></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Dimensions" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Dimensions</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Covariance Parameters</TH>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Columns in X</TH>
+    <TD class="r data">18</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Columns in Z</TH>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Subjects</TH>
+    <TD class="r data">37</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Max Obs per Subject</TH>
+    <TD class="r data">5</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX17></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Number of 
+  Observations</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">185</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">173</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Not Used</TH>
+    <TD class="r data">12</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX18></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Iteration History" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Iteration History</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Iteration</TH>
+    <TH class="r b header" scope=col>Evaluations</TH>
+    <TH class="r b header" scope=col>-2&nbsp;Res&nbsp;Log&nbsp;Like</TH>
+    <TH class="r b header" scope=col>Criterion</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">893.47252907</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">686.42342277</TD>
+    <TD class="r data">0.14063362</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">650.83185508</TD>
+    <TD class="r data">0.08302013</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">631.90109146</TD>
+    <TD class="r data">0.04245168</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">622.88673739</TD>
+    <TD class="r data">0.01713080</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">619.45497302</TD>
+    <TD class="r data">0.00443599</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>6</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">618.62527630</TD>
+    <TD class="r data">0.00045783</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>7</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">618.54692686</TD>
+    <TD class="r data">0.00000658</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>8</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">618.54586739</TD>
+    <TD class="r data">0.00000000</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX19></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criteria 
+met.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX20></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Estimated R Matrix for id 1" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Estimated R Matrix for id 
+    1</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Row</TH>
+    <TH class="r b header" scope=col>Col1</TH>
+    <TH class="r b header" scope=col>Col2</TH>
+    <TH class="r b header" scope=col>Col3</TH>
+    <TH class="r b header" scope=col>Col4</TH>
+    <TH class="r b header" scope=col>Col5</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="r data">11.8738</TD>
+    <TD class="r data">10.8875</TD>
+    <TD class="r data">10.4255</TD>
+    <TD class="r data">9.9832</TD>
+    <TD class="r data">9.1539</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="r data">10.8875</TD>
+    <TD class="r data">11.8738</TD>
+    <TD class="r data">11.3700</TD>
+    <TD class="r data">10.8875</TD>
+    <TD class="r data">9.9832</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="r data">10.4255</TD>
+    <TD class="r data">11.3700</TD>
+    <TD class="r data">11.8738</TD>
+    <TD class="r data">11.3700</TD>
+    <TD class="r data">10.4255</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="r data">9.9832</TD>
+    <TD class="r data">10.8875</TD>
+    <TD class="r data">11.3700</TD>
+    <TD class="r data">11.8738</TD>
+    <TD class="r data">10.8875</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="r data">9.1539</TD>
+    <TD class="r data">9.9832</TD>
+    <TD class="r data">10.4255</TD>
+    <TD class="r data">10.8875</TD>
+    <TD class="r data">11.8738</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX21></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Estimated R Correlation Matrix for id 1" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Estimated R Correlation 
+      Matrix for id 1</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Row</TH>
+    <TH class="r b header" scope=col>Col1</TH>
+    <TH class="r b header" scope=col>Col2</TH>
+    <TH class="r b header" scope=col>Col3</TH>
+    <TH class="r b header" scope=col>Col4</TH>
+    <TH class="r b header" scope=col>Col5</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="r data">1.0000</TD>
+    <TD class="r data">0.9169</TD>
+    <TD class="r data">0.8780</TD>
+    <TD class="r data">0.8408</TD>
+    <TD class="r data">0.7709</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="r data">0.9169</TD>
+    <TD class="r data">1.0000</TD>
+    <TD class="r data">0.9576</TD>
+    <TD class="r data">0.9169</TD>
+    <TD class="r data">0.8408</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="r data">0.8780</TD>
+    <TD class="r data">0.9576</TD>
+    <TD class="r data">1.0000</TD>
+    <TD class="r data">0.9576</TD>
+    <TD class="r data">0.8780</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="r data">0.8408</TD>
+    <TD class="r data">0.9169</TD>
+    <TD class="r data">0.9576</TD>
+    <TD class="r data">1.0000</TD>
+    <TD class="r data">0.9169</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="r data">0.7709</TD>
+    <TD class="r data">0.8408</TD>
+    <TD class="r data">0.8780</TD>
+    <TD class="r data">0.9169</TD>
+    <TD class="r data">1.0000</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX22></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Covariance Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Covariance Parameter 
+      Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Cov Parm</TH>
+    <TH class="l b header" scope=col>Subject</TH>
+    <TH class="r b header" scope=col>Estimate</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>SP(EXP)</TH>
+    <TH class="l data">id</TH>
+    <TD class="r data">46.1262</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Residual</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">11.8738</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX23></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Fit 
+  Statistics</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 Res Log Likelihood</TH>
+    <TD class="r data">618.5</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC (Smaller is Better)</TH>
+    <TD class="r data">622.5</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AICC (Smaller is Better)</TH>
+    <TD class="r data">622.6</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>BIC (Smaller is Better)</TH>
+    <TD class="r data">625.8</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX24></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Null Model Likelihood Ratio Test" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Null Model Likelihood 
+      Ratio Test</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">1</TD>
+    <TD class="r data">274.93</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX25></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Solution for Fixed Effects" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=8 scope=colgroup>Solution for Fixed 
+    Effects</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="l b header" scope=col>group</TH>
+    <TH class="l b header" scope=col>time</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr &gt; |t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">83.0052</TD>
+    <TD class="r data">0.6930</TD>
+    <TD class="r data">35</TD>
+    <TD class="r data">119.78</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data" noWrap>-1.7099</TD>
+    <TD class="r data">1.2538</TD>
+    <TD class="r data">35</TD>
+    <TD class="r data" noWrap>-1.36</TD>
+    <TD class="r data">0.1813</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data" noWrap>-1.9576</TD>
+    <TD class="r data">0.4236</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data" noWrap>-4.62</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data" noWrap>-1.0435</TD>
+    <TD class="r data">0.3597</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data" noWrap>-2.90</TD>
+    <TD class="r data">0.0044</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data" noWrap>-0.3862</TD>
+    <TD class="r data">0.2806</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data" noWrap>-1.38</TD>
+    <TD class="r data">0.1711</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data" noWrap>-0.4593</TD>
+    <TD class="r data">0.2614</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data" noWrap>-1.76</TD>
+    <TD class="r data">0.0813</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">6</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data">0.3498</TD>
+    <TD class="r data">0.7452</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">0.47</TD>
+    <TD class="r data">0.6396</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">0.5606</TD>
+    <TD class="r data">0.5576</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">1.01</TD>
+    <TD class="r data">0.3166</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">0.08879</TD>
+    <TD class="r data">0.5376</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">0.17</TD>
+    <TD class="r data">0.8691</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">0.4234</TD>
+    <TD class="r data">0.4644</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">0.91</TD>
+    <TD class="r data">0.3637</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">6</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">6</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX26></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Type 3 Tests of Fixed Effects" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=7 scope=colgroup>Type 3 Tests of Fixed 
+      Effects</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="r b header" scope=col>Num DF</TH>
+    <TH class="r b header" scope=col>Den DF</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>group</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">35</TD>
+    <TD class="r data">1.66</TD>
+    <TD class="r data">1.66</TD>
+    <TD class="r data">0.1974</TD>
+    <TD class="r data">0.2059</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">34.41</TD>
+    <TD class="r data">8.60</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>group*time</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">128</TD>
+    <TD class="r data">3.13</TD>
+    <TD class="r data">0.78</TD>
+    <TD class="r data">0.5360</TD>
+    <TD 
+class="r data">0.5382</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV></BODY></HTML>

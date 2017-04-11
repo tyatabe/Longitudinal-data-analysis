@@ -1,0 +1,167 @@
+###############################################################################################
+################### Exercise 1 ################################################################
+###############################################################################################
+#Importing data for table 2 and fig 1
+led <- read.table("tlc-data.txt")
+#Tidying it up
+colnames(led) <- c("ID", "Group", "Base", "wk1", "wk4", "wk6")
+# Checking it out
+head(led)
+# Getting summary stats stratified by week using doBy
+library(doBy)
+table.2 <- summaryBy(Base+wk1+wk4+wk6~Group, data=led, FUN=c(mean, sd))
+#Making a csv for further manipulation
+write.csv(table.2, file="table2.csv")
+# Plotting fig 1
+plot(c(0, 1, 4, 6),table.2[1,2:5], type="o", pch=19, cex=1.5, ylim=c(10, 30), ylab=("Mean blood lead level (mcd/dl)"),
+     xlab="Time(weeks)", xaxt="n")
+axis(side=1, at=c(0, 2, 4, 6), labels=c("0", "2", "4", "6"))
+lines(c(0, 1, 4, 6),table.2[2,2:5], type="o", lty=3, cex=1.5)
+e <- locator()
+leg.txt<- c("Placebo", "Succimer")
+legend( e, leg.txt,horiz=FALSE, cex=1,inset = .02, lty=c(3,1), lwd=1,pch=c(21,19), seg.len=8)
+
+# Importing data for fig 2
+topeka <- read.csv("Topeka.csv")
+head(topeka)
+str(topeka)
+colnames(topeka) <-c("ID", "height", "age", "in.height", "in.age", "lnfev")
+topeka$lnfevh <- log(exp(topeka$lnfev)/topeka$height)
+# Taking a random sample of 50...thus the plot wont be exactly the same as fig 2
+set.seed(0)
+index <- sample(300, size=50, replace=F)
+topeka.s <- topeka[topeka$ID %in% index,]
+str(topeka.s)
+
+
+#Plotting fig 2
+plot(topeka.s[topeka.s$ID==4,]$age, topeka.s[topeka.s$ID==4,]$lnfevh, type="n", xlim=c(6,19), 
+     ylim=c(-0.25, 1), xlab="Age (years)", ylab="Log(FEV1/Height)")
+
+for (i in 1:50){  
+lines(topeka.s[topeka.s$ID==index[i],]$age, topeka.s[topeka.s$ID==index[i],]$lnfevh, type="o", col=i) 
+}
+
+# Importing data for fig 3
+fat <- read.csv("fat.csv")
+head(fat)
+str(fat)
+#Plotting fig 3
+plot(fat[fat$ID==4,]$Age, fat[fat$ID==4,]$fat, type="n", xlim=c(8,18), 
+     ylim=c(2, 45), xlab="Age (years)", ylab="% Body fat")
+
+for (i in 1:162){  
+  lines(fat[fat$ID==i,]$Age, fat[fat$ID==i,]$fat, type="o") 
+}
+
+# Plotting fig 4
+plot(fat[fat$ID==4,]$Timeto.m, fat[fat$ID==4,]$fat, type="n", xlim=c(-6,5), 
+     ylim=c(2, 45), xlab="Age (years)", ylab="% Body fat")
+
+for (i in 1:162){  
+  lines(fat[fat$ID==i,]$Timeto.m, fat[fat$ID==i,]$fat, type="o") 
+}
+abline(v=0, lty=2)
+
+# Importing data for figure 5
+epi <- read.table("epilepsy-data.txt", header=F)
+colnames(epi) <- c("ID", "Group", "Age", "wk0", "wk2", "wk4", "wk6", "wk8")
+
+summary(epi)
+
+#Estimating mean weekly seizure rate by group and week
+epi.s <- summaryBy(wk0/8+wk2/2+wk4/2+wk6/2+wk8/2~Group, data=epi, FUN=c(mean))
+
+# Ploting figure 5
+plot(c(0, 2, 4, 6, 8),epi.s[1,2:6], type="o", lty=3, cex=1.5, ylim=c(3, 5), ylab=("Mean rate of seizures (per week)"),
+     xlab="Time (weeks)")
+lines(c(0, 2, 4, 6, 8),epi.s[2,2:6], type="o", pch=19, cex=1.5)
+e <- locator()
+leg.txt<- c("Placebo", "Progabide")
+legend( e, leg.txt,horiz=FALSE, cex=1,inset = .02, lty=c(3,1), lwd=1,pch=c(21,19), seg.len=8)
+
+###############################################################################################
+################### Exercise 2 ################################################################
+###############################################################################################
+#Covariance placebo
+cov.p <- cov(epi[epi$Group==0,4:8])
+write.csv(cov.p, "covplac.csv")
+
+#Covariance progabide
+cov.pr <- cov(epi[epi$Group==1,4:8])
+write.csv(cov.pr, "covprog.csv")
+
+# Corr placebo
+corr.p <- cor(epi[epi$Group==0,4:8])
+write.csv(corr.p, "corrplac.csv")
+
+# Corr progabide
+# Corr placebo
+corr.pr <- cor(epi[epi$Group==1,4:8])
+write.csv(corr.pr, "corrprog.csv")
+
+###############################################################################################
+################### Exercise 3 ################################################################
+###############################################################################################
+# Trying different specs for the LOESS model
+lo.topeka.1 <-loess(lnfevh~age, data=topeka, span=.25, degree=1)
+lo.topeka.2 <-loess(lnfevh~age, data=topeka, span=.50, degree=1)
+lo.topeka.3 <-loess(lnfevh~age, data=topeka, span=.75, degree=1)
+lo.topeka.4 <-loess(lnfevh~age, data=topeka, span=.25, degree=2)
+lo.topeka.5 <-loess(lnfevh~age, data=topeka, span=.50, degree=2)
+lo.topeka.6 <-loess(lnfevh~age, data=topeka, span=.75, degree=2)
+
+plot(topeka$age,lo.topeka.1$fitted, col="red", main="25% of neighbor points, degree 1 polynomial", xlab="Age",
+     ylab="Log(FEV1/Height)", ylim=c(-.25, 1))
+points(topeka$age, topeka$lnfevh)
+plot(topeka$age,lo.topeka.2$fitted, col="red", main="50% of neighbor points, degree 1 polynomial", xlab="Age",
+     ylab="Log(FEV1/Height)", ylim=c(-.25, 1))
+points(topeka$age, topeka$lnfevh)
+plot(topeka$age,lo.topeka.3$fitted, col="red", main="75% of neighbor points, degree 1 polynomial", xlab="Age",
+     ylab="Log(FEV1/Height)", ylim=c(-.25, 1))
+points(topeka$age, topeka$lnfevh)
+plot(topeka$age,lo.topeka.4$fitted, col="red", main="25% of neighbor points, degree 2 polynomial", xlab="Age",
+     ylab="Log(FEV1/Height)", ylim=c(-.25, 1))
+points(topeka$age, topeka$lnfevh)
+plot(topeka$age,lo.topeka.5$fitted, col="red", main="50% of neighbor points, degree 2 polynomial", xlab="Age",
+     ylab="Log(FEV1/Height)", ylim=c(-.25, 1))
+points(topeka$age, topeka$lnfevh)
+plot(topeka$age,lo.topeka.6$fitted, col="red", main="75% of neighbor points, degree 2 polynomial", xlab="Age",
+     ylab="Log(FEV1/Height)", ylim=c(-.25, 1))
+points(topeka$age, topeka$lnfevh)
+
+
+###############################################################################################
+################### Exercise 4 ################################################################
+###############################################################################################
+# linear regression model
+regm <- lm(lnfev~age+log(height), data=topeka)
+summary(regm)
+plot(regm)
+
+#interpretation on the original units of FEV
+exp(regm$coefficients)
+
+
+###############################################################################################
+################### Exercise 5 ################################################################
+###############################################################################################
+# Anova of repeated mesures
+# Categorizing into 4 categories: > 2 years before menarche, around menarche, 
+# > 2 years after menarche
+fat$timec <- as.factor(ifelse(fat$Timeto.m < -2, "A", ifelse(fat$Timeto.m > 2, "C", "B")))
+fat$id <- factor(fat$ID)
+summary(fat)
+#checking means
+with(fat, tapply(fat, timec, mean))
+
+# Doing ANOVA with lme
+library(nlme)
+m1 <- lme(fat~timec, data=fat, random= ~1|id)
+anova(m1)
+summary(m1)
+# Running a linear mized effects model of the original data
+m2 <- lme(fat~Age.m, data=fat, random=~ 1|id)
+anova(m2)
+summary(m2)
+
